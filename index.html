@@ -3,41 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WhippetGood Homepage</title>
+    <title>Game Links</title>
     <style>
         body {
+            background-image: url('https://m.gjcdn.net/game-header/1200/772262-crop0_242_2048_754-pcfgrtd9-v4.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white;
             font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+            margin: 0;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
         }
-        .header {
-            font-size: 36px;
-            font-weight: bold;
-            margin-bottom: 40px; /* Adjust margin as needed */
-        }
-        .button-container {
-            margin-top: 20px; /* Adjust margin as needed */
-        }
-        .button-container button {
+        .button-link {
+            display: inline-block;
             margin: 10px;
             padding: 10px 20px;
             font-size: 16px;
+            color: black;
+            background-color: #E6E6FA;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
             cursor: pointer;
+        }
+        .button-link:hover {
+            background-color: #0056b3;
+        }
+        .download-link {
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+            margin-top: auto;
+            padding: 20px;
+            margin-bottom: 150px; /* Added to raise the link a bit */
+        }
+        .download-link:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        WhippetGood's Website
+    <div>
+        <p>Download at the bottom:</p>
+        <a href="https://whippetdash.ncservers.xyz/dashboard" class="button-link">Dashboard (txt1.html)</a>
+        <a href="failed.html" class="button-link">GDPS Hub (coming soon)</a>
+        <a href="failed.html" class="button-link">Discord (coming soon)</a>
+        <a href="https://imwhippet.github.io" class="button-link">My Website</a>
     </div>
-    <div class="button-container">
-        <button onclick="location.href='minecraftmods.html'">Minecraft Mods</button>
-        <button onclick="location.href='https://whippetps.ncservers.xyz/dashboard/'">WhippetPS GDPS</button>
-    </div>
+    <a href="https://github.com/WhippetGood/WhippetPS/releases/" class="download-link">Download</a>
 </body>
 </html>
